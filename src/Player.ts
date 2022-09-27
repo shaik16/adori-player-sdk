@@ -14,7 +14,7 @@ export class Player {
     const iframe = document.createElement('iframe');
     iframe.setAttribute(
       'src',
-      `https://webplayer.dev.adorilabs.com/${this.options.episodeUid}`
+      `https://webplayer.adorilabs.com/${this.options.episodeUid}`
     );
     iframe.setAttribute('width', this.options.width);
     iframe.setAttribute('height', this.options.height);
