@@ -11,7 +11,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
+    "start": "tsdx watch --format esm",
     "build": "tsdx build --format esm",
     "lint": "tsdx lint",
     "prepare": "tsdx build --format esm",
