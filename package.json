@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "dist/adori-player-sdk.esm.js",
   "typings": "dist/index.d.ts",
