@@ -1,35 +1,4 @@
 {
-  "version": "0.1.4",
-  "license": "MIT",
-  "main": "dist/adori-player-sdk.esm.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
-  "scripts": {
-    "start": "tsdx watch --format esm",
-    "build": "tsdx build --format esm",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build --format esm",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
-  },
-  "peerDependencies": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
   "name": "adori-player-sdk",
   "author": "Shaik Sadath Basha",
   "description": "Use Adori player using this package",
@@ -38,23 +7,31 @@
     "type": "git",
     "url": "git+https://github.com/shaik16/adori-player-sdk.git"
   },
-  "module": "dist/adori-player-sdk.esm.js",
+  "keywords": [
+    "Adori"
+  ],
+  "version": "0.1.4",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "type": "module",
+  "typings": "dist/index.d.ts",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "module": "dist/index.js",
   "size-limit": [
     {
-      "path": "dist/adori-player-sdk.esm.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/adori-player-sdk.esm.js",
+      "path": "dist/index.js",
       "limit": "10 KB"
     }
   ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^8.1.0",
-    "husky": "^8.0.1",
-    "size-limit": "^8.1.0",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.4.0",
-    "typescript": "^4.8.3"
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
   }
 }

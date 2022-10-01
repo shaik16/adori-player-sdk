@@ -1,3 +1,3 @@
-import { Player, Options } from './Player';
-
-export { Player, Options };
+import { Player } from './Player'
+import type { Options } from './Player'
+export { Player, Options }
