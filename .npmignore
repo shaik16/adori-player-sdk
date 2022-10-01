@@ -3,3 +3,4 @@ src
 tsconfig.json
 vite.config.js
 .vscode
+index.html
