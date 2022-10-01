@@ -2,3 +2,4 @@ src
 .github
 tsconfig.json
 vite.config.js
+.vscode
